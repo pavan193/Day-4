@@ -1,0 +1,29 @@
+<html>
+
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <h1>Registration Form</h1>
+    <form name='registration' onSubmit="return formValidation();">
+        <ul>
+            <li><label for="username">Name:</label>
+            <input type="text" name="username" size="35" /></li>
+            <li><label for="mobileno">Address:</label>
+            <input type="text" name="mobileno" size="35" /></li>
+            <li><label for="email"> Email:</label>
+           ><input type="text" name="email" size="35" /></li>
+            <li><label id="gender">Sex:</label>
+            <input type="radio" name="msex" value="Male" /><span>Male</span>
+            <input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+            <li><label>Language:</label>
+            <input type="checkbox" name="it" value="its" checked /><span>IT</span>
+            <input type="checkbox" name="mec" value="mech" /><span>Mechanical</span>
+            <input type="checkbox" name="ele" value="elec" /><span>Electrical</span></li>
+            <button type="button">Register</button>
+            <input type="reset" />
+            
+        </ul>
+    </form>
+</body>
+
+</html>

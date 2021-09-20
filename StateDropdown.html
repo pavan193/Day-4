@@ -1,0 +1,70 @@
+<html>
+ 
+<head>
+ 
+</head>
+ 
+<body>
+    <form>
+        <label>Country</label>
+        <br>
+        <select id="ddlCountry" onchange="BindStateDropdown()">
+            <option>Please select a country
+            </option>
+            <option>India
+            </option>
+            <option>Australia
+            </option>
+            <option>USA
+            </option>
+        </select><br><br>
+        <label>State</label>
+        <br>
+        <select id="ddlState" onchange="BindCityDropdown()">
+        </select> <br>
+        <label>City</label>
+        <br>
+        <select id="ddlCity" 
+ 
+    </form>
+</body>
+ 
+</html>
+<script>
+    function BindStateDropdown() {
+        var txtCountry = document.getElementById('ddlCountry').value;
+        switch (txtCountry) {
+            case 'India':
+                document.getElementById('ddlState').innerHTML =
+                    '<option>select state</option><option>Karnataka</option>'
+                break;
+                case 'USA':
+                document.getElementById('ddlState').innerHTML =
+                    '<option>select state</option><option>Atlanta</option>'
+                break;
+            default:
+                document.getElementById('ddlState').innerHTML = '';
+                break;
+ 
+        }
+    }
+    function BindCityDropdown(){
+        var txtState = document.getElementById('ddlState').value;
+        switch(txtState) {
+            case 'Karnataka' :
+            document.getElementById('ddlCity').innerHTML =
+                    '<option>select city</option><option>Hubli</option>'
+                break;
+                case 'Atlanta':
+                document.getElementById('ddlCity').innerHTML =
+                    '<option>select state</option><option>Florida</option>'
+                break;
+            default:
+                document.getElementById('ddlCity').innerHTML = '';
+                break;
+ 
+                
+        }
+        
+    }
+</script>

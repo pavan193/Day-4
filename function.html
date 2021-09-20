@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="oddeven" value="5"/>
+        <br>
+        <input type="button" value="Check Odd Even" onclick="checkoddeven()"/>
+        <br> <br>
+        <label id="lblMessage"  ></label> 
+    </body>
+</html>
+<script>
+    function checkoddeven()
+    {
+        var num=document.getElementById('oddeven').value;
+        if(n%2 ==0)
+         document.getElementById("lblmessage").innerHTML=num+'even';
+        else
+        document.getElementById("lblmessage").innerHTML=num+'odd';
+    
+    }
+    
+</script>
