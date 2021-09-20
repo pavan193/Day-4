@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<student database>
+     <student>
+	<name>jayanthi gomas</name>
+	<age>14</age>
+	<roll number>T012345</roll number>
+       <subjects>
+	<subject>Maths</subject>
+       	<subject>science</subject>
+       </subjects>
+     </student>
+     <student>
+	<name>sharath ></name>
+	<age>14</age>
+	<roll number>T012346</roll number>
+       <subjects>
+	<subject>Maths</subject>
+       	<subject>science</subject>
+       </subjects>
+     </student>
+</student database>
+
+
+<?xml version="1.0"?>
+<HealthRecords>
+    <Suresh>
+        <PatientName>Suresh</PatientName>
+        <age>25</age>
+        <Height>5.9</Height>
+        <weight>60</weight>
+        <Disease>
+            <disease1>Asthama</disease1>
+            <disease2>High Bp</disease2>
+        </Disease>
+    </Suresh>
+    <Ramesh>
+        <PatientName>Ramesh</PatientName>
+        <age>26</age>
+        <Height>5.9</Height>
+        <Weight>60 </Weight>
+        <Disease>
+            <disease1>Cough</disease1>
+            <disease2>Cancer</disease2>
+        </Disease>
+    </Ramesh>
+</HealthRecords>
