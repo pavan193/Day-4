@@ -1,0 +1,100 @@
+REM   Script: Session 01
+REM   Table Creation and insertion
+
+create table example(Id int,text varchar(200));
+
+create table example(Id int,text varchar(200));
+
+insert into example(Id,text) values(1,'pavan');
+
+select * from example;
+
+insert into example(Id,text) values(2,'vivek');
+
+insert into example(Id,text) values(3,'lokesh');
+
+insert into example(Id,text) values(4,'Any1');
+
+insert into example(Id,text) values(5,'Any2');
+
+insert into example(Id,text) values(6,'Any3');
+
+insert into example(Id,text) values(7,'Any4');
+
+insert into example(Id,text) values(8,'Any5');
+
+insert into example(Id,text) values(9,'Any6');
+
+select * from example;
+
+select * from example;
+
+select * from example where id=4;
+
+select ;
+
+select * from example;
+
+select text as name from sample where text='lokesh';
+
+select TEXT as Name from sample where TEXT='lokesh';
+
+select * from example;
+
+select TEXT as Name from example;
+
+select * from example;
+
+select text from example where text<>'pavan';
+
+create table es(id int, EmployeeName varchar, EmployeeSalary int);
+
+create table es(id int, EmployeeName varchar(500), EmployeeSalary int);
+
+select * from es;
+
+insert into es(id,employeename,employeesalary) values(1,'pavan',20000);
+
+insert into es(id,employeename,employeesalary) values(2,'pavan2',20000);
+
+insert into es(id,employeename,employeesalary) values(3,'pavan3',20000);
+
+insert into es(id,employeename,employeesalary) values(4,'pavan4',30000);
+
+insert into es(id,employeename,employeesalary) values(5,'pavan5',20000);
+
+
+
+
+
+
+
+
+
+
+
+
+select * from es;
+select * from employeesalary;
+select * from es where employeesalary between 20000 and 21000;
+select * from es where employeename like '%Emp%';
+select * from es where id in(1,2,3);
+select * from es where id NOT in(1,2,3);
+ select EMPLOYEENAME || '--' ||EMPLOYEESALARY as emplnameandsal from es;
+select * from es where employeesalary<25000 and employeesalary>20000;
+select * from es;
+select * from example;
+select distinct text from sample;
+select * from sample order by ID desc;
+
+
+select upper('sample') from dual;
+select initcap ('sample is here') from dual;
+select concat('sample is here','to add charecters') from dual;
+
+select current_date from dual;
+select add_months(current_date,1) from dual;
+select months_between('20-dec-21','20-oct-21') from dual;
+
+select to_char(sysdate,'dd month,yyyy')from dual;
+ 
